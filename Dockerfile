@@ -1,5 +1,5 @@
-FROM rocker/tidyverse
-MAINTAINER Marc A. Suchard <msuchard@ucla.edu>
+FROM rocker/tidyverse:4.1.2
+MAINTAINER Stef Piatek <s.piatek@ucl.ac.uk>
 
 RUN apt-get update && apt-get install -y python-dev openjdk-8-jdk liblzma-dev libbz2-dev \
 && R CMD javareconf
